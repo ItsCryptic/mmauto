@@ -29,7 +29,7 @@ dbConn = db.sessionDBConnector()
 def tokenGen(leng=50):
     temp = []
     for i in range(leng):
-        #TODO: RAND.CHOICE IS NOT CRYPTOGRAPHiCCLY SECURE
+        #TODO: RAND.CHOICE IS NOT CRYPTOGRAPHICCALY SECURE
         temp.append(rand.choice(string.ascii_letters + string.digits))
     return "".join(temp)
 
